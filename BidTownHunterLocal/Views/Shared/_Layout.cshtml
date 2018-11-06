@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿<!--Developer: Hunter Hatchette
+    Accomplished: Modified the layout to have the links: Bid-Town, Browse, Ending-Soon, 
+                  Top-Sellers, Account, Register, Login. The links will navigate to the 
+                  appropriate views.-->
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -8,6 +13,9 @@
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
+<Style>
+    body{background-color: powderblue;}
+</Style>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
@@ -17,13 +25,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Bid-Town", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Browse", "Browse", "Home")</li>
+                    <li>@Html.ActionLink("Ending-Soon", "EndingSoon", "Home")</li>
+                    <li>@Html.ActionLink("Top-Sellers", "TopSellers", "Home")</li>
+                    <li>@Html.ActionLink("Account", "Account", "Home")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -33,7 +42,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - Bid-Town (CSCI-540 Erin/Chris/Hunter)</p>
         </footer>
     </div>
 

@@ -1,4 +1,9 @@
-﻿using System;
+﻿//-------------------------------------------------------------------------------------------------------------------=
+// Developer: Hunter Hatchette
+// Accomplished: Modified the Account controller to add RegisterSeller, and Register buyer.
+//--------------------------------------------------------------------------------------------------------------------
+
+using System;
 using System.Globalization;
 using System.Linq;
 using System.Security.Claims;
@@ -139,6 +144,20 @@ namespace BidTownHunterLocal.Controllers
         [AllowAnonymous]
         public ActionResult Register()
         {
+            return View();
+        }
+
+        [AllowAnonymous]
+        public ActionResult RegisterBuyer()
+        {
+            ViewBag.Message = "Your Register Buyer Page";
+            return View();
+        }
+
+        [AllowAnonymous]
+        public ActionResult RegisterSeller()
+        {
+            ViewBag.Message = "Your Register Seller Page";
             return View();
         }
 

@@ -1,10 +1,12 @@
-﻿@{
+﻿<!--Devloper:     Hunter Hatchette
+    Accomplished: Set up the Index View which displays upon loading the webpage.-->
+@{
     ViewBag.Title = "Home Page";
 }
 
 <div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <h1>Bid-Town!</h1>
+    <p>Bringing you the best exotic pets that money can buy!</p>
     <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
 </div>
 
@@ -12,20 +14,21 @@
     <div class="col-md-4">
         <h2>Getting started</h2>
         <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
+            In order to buy your next pet you will need to make sure that you are registered as a buyer. If you wish
+            to sell exotic pets of your own, you can submit a request to become a seller. Simply follow the link below to
+            get started!
         </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        <p><a class="btn btn-default" href="/Home/About">Get Started! &raquo;</a></p>
     </div>
     <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        <h2>Browse</h2>
+        <p>Get started quickly by clicking the link below to browse. Or use the navigation bar at the top to quickly
+        get where you need to go!</p>
+        <p><a class="btn btn-default" href="/Home/Browse">Browse! &raquo;</a></p>
     </div>
     <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <h2>Your account</h2>
+        <p>Access you account by clicking the link below!</p>
+        <p><a class="btn btn-default" href="/Home/Account">Account! &raquo;</a></p>
     </div>
 </div>
