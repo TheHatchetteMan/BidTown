@@ -13,10 +13,10 @@ namespace BidTownHunterLocal.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class BidTown540Entities : DbContext
+    public partial class BidTown540User : DbContext
     {
-        public BidTown540Entities()
-            : base("name=BidTown540Entities")
+        public BidTown540User()
+            : base("name=BidTown540User")
         {
         }
     
@@ -25,6 +25,10 @@ namespace BidTownHunterLocal.Models
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<AspNetRole> AspNetRoles { get; set; }
+        public virtual DbSet<AspNetUserClaim> AspNetUserClaims { get; set; }
+        public virtual DbSet<AspNetUserLogin> AspNetUserLogins { get; set; }
+        public virtual DbSet<AspNetUser> AspNetUsers { get; set; }
         public virtual DbSet<Bird> Birds { get; set; }
         public virtual DbSet<Bug> Bugs { get; set; }
         public virtual DbSet<Class> Classes { get; set; }
@@ -36,6 +40,6 @@ namespace BidTownHunterLocal.Models
         public virtual DbSet<Seller_Applications> Seller_Applications { get; set; }
         public virtual DbSet<Transaction> Transactions { get; set; }
         public virtual DbSet<User> Users { get; set; }
-        public virtual DbSet<database_firewall_rules> database_firewall_rules { get; set; }
+        public virtual DbSet<C__MigrationHistory> C__MigrationHistory { get; set; }
     }
 }
