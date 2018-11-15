@@ -11,39 +11,32 @@
 @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
 {
     @Html.AntiForgeryToken()
-    <h4>Create a new account.</h4>
-    <hr />
-    @Html.ValidationSummary("", new { @class = "text-danger" })
-    <div class="form-group">
-        @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
-        </div>
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
-        </div>
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
-        </div>
+    <div>
+        <h1>
+            In order to get started with Bid Town, you must register! 
+        </h1>
+        <hr />
+        <h2>
+            -If you wish to BUY Exotic Pets you must register as a buyer.
+        </h2>
+        <h2>
+            -If you wish to SELL Exotic Pets you must register as a seller.
+        </h2>
+        <h2>
+            -If you wish to do BOTH, you must have separate accounts.
+        </h2>
+        <hr />
+        <h3>
+            *Note: In order to be a seller you must enter more detailed information and your acceptance will be subject to our approval.
+        </h3>
     </div>
     <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
-            <input type="submit" class="btn btn-default" value="Register" />
             <p><a class="btn btn-default" href="/Account/RegisterBuyer">Register Buyer! &raquo;</a></p>
             <p><a class="btn btn-default" href="/Account/RegisterSeller">Register Seller! &raquo;</a></p>
         </div>
     </div>
 }
-    <p><a class="btn btn-default" href="/Home/About">Register Buyer! &raquo;</a></p>
-    <p><a class="btn btn-default" href="/Home/About">Register Seller! &raquo;</a></p>
-    <li>@Html.ActionLink("Register to be a Seller", "RegisterSeller", "Account")</li>
-    <li>@Html.ActionLink("Register to be a Buyer", "RegisterBuyer", "Account")</li>
 
 
 @section Scripts {
