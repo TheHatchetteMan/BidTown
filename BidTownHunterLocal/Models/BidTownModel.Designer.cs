@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\Hunter\source\repos\BidTownHunterLocal\BidTownHunterLocal\Models\BidTownModel.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\Hunter\Source\Repos\BidTown\BidTownHunterLocal\Models\BidTownModel.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.
