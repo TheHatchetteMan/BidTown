@@ -224,6 +224,21 @@
     <Compile Include="Models\Bug.cs">
       <DependentUpon>BidTownModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Buyer.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Buyer.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Buyer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Buyer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Buyer.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Buyer.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\Class.cs">
       <DependentUpon>BidTownModel.tt</DependentUpon>
     </Compile>
@@ -254,7 +269,7 @@
       <DependentUpon>BidTownModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\User.cs">
-      <DependentUpon>BidTownModel.tt</DependentUpon>
+      <DependentUpon>Buyer.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -278,6 +293,16 @@
       <DependentUpon>BidTownModel.edmx</DependentUpon>
       <LastGenOutput>BidTownModel.cs</LastGenOutput>
     </Content>
+    <Content Include="Models\Buyer.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Buyer.edmx</DependentUpon>
+      <LastGenOutput>Buyer.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Buyer.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Buyer.edmx</DependentUpon>
+      <LastGenOutput>Buyer.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -289,6 +314,13 @@
     </EntityDeploy>
     <Content Include="Models\BidTownModel.edmx.diagram">
       <DependentUpon>BidTownModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\Buyer.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Buyer.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Buyer.edmx.diagram">
+      <DependentUpon>Buyer.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
